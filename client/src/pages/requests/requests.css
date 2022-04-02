@@ -1,0 +1,16 @@
+.friendCardListComponent {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.friendCard {
+  width: 95%;
+  margin: 0 auto 0.5em;
+}
+
+@media (min-width: 450px) {
+  .requestContainer {
+    display: flex;
+    margin: 0 auto;
+  }
+}

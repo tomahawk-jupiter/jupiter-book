@@ -1,0 +1,31 @@
+.navigationComponent {
+  height: 50px;
+  padding: 0 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* .navLogo {
+  cursor: pointer;
+} */
+
+.navUserContainer {
+  display: flex;
+  align-items: center;
+}
+.navUserContainer a {
+  display: flex;
+}
+.navUserImg {
+  width: 30px;
+  margin-right: 0.4em;
+  border-radius: 50%;
+}
+.navUsername {
+  font-size: 1rem;
+}

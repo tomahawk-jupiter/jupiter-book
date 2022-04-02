@@ -1,0 +1,50 @@
+.heroComponent {
+  margin-bottom: 1rem;
+}
+
+.heroCover {
+  height: 200px;
+  position: relative;
+}
+
+.heroProfileImg,
+.heroCoverImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.heroCoverImg {
+  height: 150px;
+  background-color: rgb(158, 157, 157);
+}
+
+.heroProfileImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 30px;
+  border: 3px solid white;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25em;
+}
+.profileInfoName {
+  margin: 0;
+  padding: 0;
+}
+
+.friendStatus {
+  color: var(--blue);
+  margin: 0;
+}

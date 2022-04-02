@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  /*
+  These variables can be set with javascript:border:
+  document.documentElement.style.setProperty('--base',this.state.color);
+  */
+  --blue: #1868df;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  min-width: 200px;
+  max-width: 1400px;
+}
+
+.navigationComponent {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+/**** Set font size for very small screen ****/
+@media (max-width: 290px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media (max-width: 206px) {
+  :root {
+    font-size: 10px;
+  }
+}
+/**** WIDE SCREEN LAYOUT ****/
+@media (min-width: 800px) {
+  .profilePage,
+  .homePage {
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-areas:
+      "navigation navigation navigation"
+      "sidebarLeft hero sidebarRight"
+      "sidebarLeft share sidebarRight"
+      "sidebarLeft feed sidebarRight";
+  }
+
+  .navigationComponent {
+    grid-area: navigation;
+    height: 50px;
+  }
+  .feedComponent {
+    grid-area: feed;
+  }
+  .sidebarLeft {
+    grid-area: sidebarLeft;
+  }
+  .sidebarRight {
+    grid-area: sidebarRight;
+  }
+  .heroComponent {
+    grid-area: hero;
+  }
+  .shareComponent {
+    grid-area: share;
+  }
+}
+
+img {
+  cursor: pointer;
+}
+
+.feedAreaContainer {
+  margin: 0 0.5em;
+}

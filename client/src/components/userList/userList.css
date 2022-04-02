@@ -1,0 +1,47 @@
+.componentTitle {
+  text-align: center;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.friendCardListComponent {
+  margin: 0 0.5rem;
+}
+
+.friendCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 250px;
+  margin-bottom: 1em;
+  padding-right: 1em;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.friendCardImgInfoSection {
+  display: flex;
+  align-items: center;
+  width: 95%;
+}
+
+.friendCardImg {
+  width: 50px;
+  border: solid white 2px;
+}
+.friendCardInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  margin-left: 1em;
+}
+.friendCardName {
+  font-weight: 700;
+}
+
+@media (max-width: 270px) {
+  .friendCard {
+    max-width: 90%;
+  }
+}

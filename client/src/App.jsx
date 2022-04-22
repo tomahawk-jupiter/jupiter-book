@@ -5,7 +5,7 @@ import Suggested from "./pages/suggested/Suggested";
 import Requests from "./pages/requests/Requests";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "./context/UserContext";
 
@@ -20,7 +20,10 @@ function App() {
             path="/profile/:profileId"
             element={user ? <Profile /> : <Login />}
           />
-          <Route path="/login" element={user ? <Home /> : <Login />} />
+          <Route
+            path="/login"
+            element={user ? <Navigate to="/" /> : <Login />}
+          />
           <Route path="/register" element={user ? <Home /> : <Register />} />
           <Route path="/friends" element={user ? <Friends /> : <Login />} />
           <Route path="/requests" element={user ? <Requests /> : <Login />} />

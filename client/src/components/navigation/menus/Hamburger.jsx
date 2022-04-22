@@ -6,6 +6,28 @@ import MenuItem from "@mui/material/MenuItem";
 import { useContext, useState } from "react";
 import { UserContext } from "../../../context/UserContext";
 
+import { useMatch, useResolvedPath } from "react-router-dom";
+
+function CustomLink({ children, to, ...props }) {
+  let resolved = useResolvedPath(to);
+  let match = useMatch({ path: resolved.pathname, end: true });
+
+  return (
+    <div>
+      <Link
+        className="hamburgerLink"
+        style={{
+          color: match ? "#1868df" : "black",
+        }}
+        to={to}
+        {...props}
+      >
+        {children}
+      </Link>
+    </div>
+  );
+}
+
 const Hamburger = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -42,36 +64,53 @@ const Hamburger = () => {
           "aria-labelledby": "basic-button",
         }}
       >
-        <Link to={"/"} style={{ textDecoration: "none", color: "black" }}>
+        <CustomLink to="/">
           <MenuItem onClick={handleClose}>Feed</MenuItem>
-        </Link>
-        <Link
-          to={`/profile/${user._id}`}
-          style={{ textDecoration: "none", color: "black" }}
-        >
+        </CustomLink>
+
+        <CustomLink to={`/profile/${user._id}`}>
           <MenuItem onClick={handleClose}>Profile</MenuItem>
-        </Link>
-        <Link
-          to={"/friends"}
-          style={{ textDecoration: "none", color: "black" }}
-        >
+        </CustomLink>
+
+        <CustomLink to={"/friends"}>
           <MenuItem onClick={handleClose}>Friends</MenuItem>
-        </Link>
-        <Link
-          to={"/requests"}
-          style={{ textDecoration: "none", color: "black" }}
-        >
+        </CustomLink>
+
+        <CustomLink to={"/requests"}>
           <MenuItem onClick={handleClose}>Requests</MenuItem>
-        </Link>
-        <Link
-          to={"/suggested"}
-          style={{ textDecoration: "none", color: "black" }}
-        >
+        </CustomLink>
+
+        <CustomLink to={"/suggested"}>
           <MenuItem onClick={handleClose}>Suggested</MenuItem>
-        </Link>
-        <Link to={"/login"} style={{ textDecoration: "none", color: "black" }}>
+        </CustomLink>
+
+        <CustomLink to={"/login"}>
           <MenuItem onClick={handleLogout}>Logout</MenuItem>
-        </Link>
+        </CustomLink>
+
+        {/* <Link to={"/"} className="hamburgerLink">
+          <MenuItem onClick={handleClose}>Feed</MenuItem>
+        </Link> */}
+
+        {/* <Link to={`/profile/${user._id}`} className="hamburgerLink">
+          <MenuItem onClick={handleClose}>Profile</MenuItem>
+        </Link> */}
+
+        {/* <Link to={"/friends"} className="hamburgerLink">
+          <MenuItem onClick={handleClose}>Friends</MenuItem>
+        </Link> */}
+
+        {/* <Link to={"/requests"} className="hamburgerLink">
+          <MenuItem onClick={handleClose}>Requests</MenuItem>
+        </Link> */}
+
+        {/* <Link to={"/suggested"} className="hamburgerLink">
+          <MenuItem onClick={handleClose}>Suggested</MenuItem>
+        </Link> */}
+
+        {/* <Link to={"/login"} className="hamburgerLink">
+          <MenuItem onClick={handleLogout}>Logout</MenuItem>
+        </Link> */}
       </Menu>
     </div>
   );

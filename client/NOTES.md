@@ -7,6 +7,7 @@
 - [React Context and hooks](#react-context-with-usecontext-and-usereducer)
 - [useReducer](#usereducer)
 - [Axios delete with body](#axios-delete-with-body)
+- [Active Nav Link Style](#active-nav-link-style)
 - [Create react app original notes](#getting-started-with-create-react-app)
 
 ## Packages
@@ -120,6 +121,12 @@ To receive data from `req.body.userId` in the backend, the data must be sent lik
     })
 
 [Page top](#contents)
+
+## Active Nav Link Style
+
+There is an example in `components/navigation/menus/Hamburger.jsx`.
+
+It uses `useMatch` and `useResolvedPath` from react-router-dom to check the active link so that a style can be conditionally applied.
 
 ## Getting Started with Create React App
 

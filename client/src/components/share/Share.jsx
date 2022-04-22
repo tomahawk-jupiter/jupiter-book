@@ -125,7 +125,6 @@ const Share = ({ postId }) => {
       )}
 
       <Button onClick={handleShare}>
-        {/* {postId ? "Share comment" : "Share post"} */}
         {isFetching ? "Loading..." : postId ? "Share comment" : "Share post"}
       </Button>
     </div>

@@ -24,8 +24,10 @@ const Home = () => {
         </>
       )}
       <div className="feedAreaContainer">
-        {/* <h4 className="userName">Welcome {user.username}</h4> */}
+        <h2 className="componentTitle">Feed</h2>
         <Share />
+        <hr />
+        <h4 className="timelineTitle">Timeline</h4>
         <Feed />
       </div>
     </div>

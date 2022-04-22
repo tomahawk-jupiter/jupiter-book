@@ -29,3 +29,8 @@
 .navUsername {
   font-size: 1rem;
 }
+
+.hamburgerLink {
+  text-decoration: none;
+  color: black;
+}

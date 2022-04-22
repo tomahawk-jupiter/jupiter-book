@@ -1,13 +1,7 @@
-# Social App Design Notes
+# Social App
 
-Start with `npm start`. The backend api must also be running.
+In the client side I use **React Router**, **React context**, and **MUI**. There are some notes and useful links in `NOTES.md` that helped me learn how to use these things.
 
 ## Context React
 
-I use context react to store the current user after they have logged in.
-
-## Extra things to add
-
-- Add an input for a profile pic in `register page`. Url or file.
-- Add a chat feature.
-- So far I have not protected the backend routes but I could do this with Passport.js using sessions or tokens.
+I use context react to store the current user after they have logged in instead of using passport tokens or sessions.

@@ -35,7 +35,7 @@ const Profile = () => {
       )}
       <div className="feedAreaContainer">
         {(!profileId && <Share />) || (profileId === user._id && <Share />)}
-
+        {profileId == user._id && <h4 className="timelineTitle">Your posts</h4>}
         <Feed profileId={profileId ? profileId : user._id} />
       </div>
     </div>

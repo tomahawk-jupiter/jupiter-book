@@ -1,31 +1,5 @@
 # NOTES
 
-## Contents
-
-- [Setup](#setup)
-- [Testing: what I learned](#testing-what-i-learned)
-
-## Setup
-
-Create package.json
-
-    $ npm init
-
-Initialize folder as a git repo
-
-    $ git init
-
-Install dependencies
-
-    $ npm install express mongoose dotenv helmet morgan cors bcrypt
-    $ npm install –save-dev nodemon
-
-Add start script
-
-    "start": "nodmon index.js"
-
-[Page top](#contents)
-
 ## Testing: What I Learned
 
 `setupDB.js` is where the test setup functions are.

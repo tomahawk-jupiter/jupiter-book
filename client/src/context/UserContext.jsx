@@ -103,16 +103,3 @@ export const UserContextProvider = ({ children }) => {
     </UserContext.Provider>
   );
 };
-
-// const johnDoe = {
-//   _id: "622fcae5d3a269300a6300d1",
-//   username: "john doe",
-//   email: "john@doe",
-//   profilePicture: "",
-//   coverPicture: "",
-//   isAdmin: false,
-//   location: "London",
-//   friends: ["622fcb26d3a269300a6300d3"],
-//   sentRequests: [],
-//   receivedRequests: [],
-// };

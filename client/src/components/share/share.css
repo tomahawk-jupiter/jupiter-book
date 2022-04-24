@@ -1,0 +1,63 @@
+.shareComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0.5em;
+  border: solid 5px #2d539d;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.shareInputRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.shareProfileImg {
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1em;
+  -webkit-box-shadow: 6px 8px 26px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 6px 8px 26px 3px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 264px) {
+  .shareProfileImg {
+    width: 30px;
+  }
+}
+
+.addImgLabel {
+  cursor: pointer;
+  color: rgb(219, 111, 49);
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  margin: 0.5em 0;
+}
+.addImgLabel span {
+  font-weight: 700;
+}
+
+.previewImageContainer {
+  position: relative;
+}
+
+.previewImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.clearPreviewImg {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  cursor: pointer;
+  color: red;
+  background-color: white;
+  border-radius: 50%;
+}

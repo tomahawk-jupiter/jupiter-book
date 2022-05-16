@@ -1,7 +1,13 @@
 # Social App API
 
-The second big thing I learnt was how to deal with image uploading. I settled on using **Cloudinary** to store images and store the links in mongoose. It was my first time using Cloudinary and its a great way to deal with image uploads. I couldn't find a better way to handle this.
+This is a simple Facebook style app. Users can make and accept friend requests, make posts that include text and an image that friends can see, and comment and like posts.
+
+I learnt was how to deal with image uploading. I settled on using **Cloudinary** to store images and store the links in mongoose. It was my first time using Cloudinary and its a great way to deal with image uploads. I couldn't find a better way to handle this.
 I like that images can be resized while uploading to save space.
+
+The user after logging in is stored in state rather than using backend authentication.
+
+I used Express, Mongoose, Bcrypt, React, Cloudinary and axios.
 
 ## Running the api
 
@@ -17,7 +23,7 @@ Also in .env put the mongo uri for tests, it needs to be split into two pieces, 
 
     const connectionString = MONGO_URI_L + dbName + MONGO_URI_R;
 
-This is so different test databases can be used.
+This is so different test databases can be used in each test file.
 
 ### Starting the api
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
   /*
@@ -13,7 +13,7 @@
 
 body {
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   min-width: 200px;
   max-width: 1400px;
 }
@@ -43,10 +43,10 @@ body {
     display: grid;
     grid-template-columns: 2fr 5fr 2fr;
     grid-template-areas:
-      "navigation navigation navigation"
-      "sidebarLeft hero sidebarRight"
-      "sidebarLeft share sidebarRight"
-      "sidebarLeft feed sidebarRight";
+      'navigation navigation navigation'
+      'sidebarLeft hero sidebarRight'
+      'sidebarLeft share sidebarRight'
+      'sidebarLeft feed sidebarRight';
   }
 
   .navigationComponent {
@@ -75,7 +75,10 @@ img {
 }
 
 .feedAreaContainer {
-  max-width: 560px;
+  /* max-width: 560px; */
+  min-width: 90%;
+  overflow-y: scroll;
+  height: 100vh;
   margin: 0 auto;
   padding: 0 0.5rem;
 }
@@ -92,7 +95,9 @@ img {
 }
 
 /**** Jupiter title ****/
-.jupiterImgContainer {
+
+/* CODE IS COMMENTED OUT IN Home.jsx */
+/* .jupiterImgContainer {
   position: relative;
   display: flex;
   align-items: center;
@@ -118,7 +123,7 @@ img {
   position: absolute;
   z-index: -1;
   width: 150px;
-}
+} */
 
 .italicNote {
   font-style: italic;

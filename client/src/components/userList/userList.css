@@ -21,11 +21,13 @@
   display: flex;
   align-items: center;
   width: 95%;
+  border-bottom: 1px solid #000;
 }
 
 .friendCardImg {
   width: 50px;
   border: solid white 2px;
+  padding-top: 0.2rem;
 }
 .friendCardInfo {
   display: flex;

@@ -3,7 +3,7 @@
 }
 
 .heroCover {
-  height: 200px;
+  height: 250px;
   position: relative;
 }
 
@@ -27,8 +27,8 @@
   left: 0;
   right: 0;
   margin: auto;
-  top: 30px;
-  border: 3px solid white;
+  top: 70px;
+  border: 3px solid #0b2f55;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 }

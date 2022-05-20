@@ -7,7 +7,7 @@
   border: solid 5px #2d539d;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0 1px 20px rgba(36, 89, 115, 0.68);
 }
 
 .shareInputRow {

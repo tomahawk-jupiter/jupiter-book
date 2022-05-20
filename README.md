@@ -4,6 +4,8 @@ A Facebook style app. I made this to learn and practice how to make and deploy a
 
 See the [live version](https://jupiter-book.herokuapp.com/) hosted on Heroku.
 
+**This is the Production branch**
+
 ## Fake Users
 
 Sign in info for the fake users is name@name (lowercase) and password is 123456. Or first@last.

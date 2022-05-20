@@ -19,6 +19,7 @@ To run locally the base URL needs to be set in a couple of places to the local h
 - [Running the API](#running-the-api)
 - [Production](#production)
 - [Heroku Hosting](#heroku-hosing)
+- [Changing Hosted Code, Step by Step](#changing-hosted-code-step-by-step)
 
 ## Fake Users
 
@@ -162,6 +163,41 @@ You can remove a repo if you wan't to start again:
     $ git add .
     $ git commit -m "my commit message"
     $ git push heroku master
+
+## Changing Hosted Code Step by Step
+
+I strongly suspect that there is a more streamlined way to do this! However, for now, this should work.
+
+    $ git clone <repo url or ssh>    // get this from the code button in github
+
+### Setup dev environment
+
+Setup for dev (or clone the dev branch but that will then need to be setup for production). Do this by changing the base URLs in `axios.config.js` and create a `.env` in the client directory with this `REACT_APP_PUBLIC_FOLDER=https://jupiter-book.herokuapp.com/assets/` in it.
+
+Should be able to start the client and api seperately now for development.
+
+### Setup for prod
+
+Switch the urls back to the apps url. Build the build directory in the client with `npm run build`.
+
+Delete the node_modules from the client.
+
+### Push to Heroku
+
+Commit changes:
+
+    $ git add .
+    $ git commit -m "You commit message"
+    $ git push // push to github (optional but probably a good idea)
+
+Setup Heroku remote and push:
+
+    $ heroku login // opens browser for login
+    $ heroku git:remote -a <app name, ie. jupiter-book>
+    $ git remote -v // see the remotes
+    $ git push heroku main // push to heroku
+
+Wait...Done!
 
 ## Improvements
 

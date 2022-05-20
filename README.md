@@ -6,9 +6,9 @@ See the [live version](https://jupiter-book.herokuapp.com/) hosted on Heroku.
 
 ## Fake Users
 
-Sign in info for the fake users is name@name (lowercase) and password is 123456.
+Sign in info for the fake users is name@name (lowercase) and password is 123456. Or first@last.
 
-eg. james@james, 123456.
+eg. james@james, 123456. Or jane@doe, 123456.
 
 ## What It Does
 

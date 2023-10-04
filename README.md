@@ -2,10 +2,6 @@
 
 A Facebook style app. I made this to learn and practice how to make and deploy a MERN app.
 
-See the [live version](https://jupiter-book.herokuapp.com/) hosted on Heroku.
-
-**This is the Production branch**
-
 To run locally the base URL needs to be set in a couple of places to the local host. See the produciton section to see where this needs to be done.
 
 ## Contents
